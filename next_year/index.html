@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+
+<body>
+<div >
+  <div data-role="page">
+    <div data-role="header">
+      <h2 style="white-space: normal; margin: 80%">ACHE Submission Form</h2>
+    </div>
+          <input type="text" name="aaa" id="aaa_3" value="name" />
+          <label for="aaa_3">Name</label>
+    <div data-role="content">(Question A) Why can't the professor decide the express chest?:
+      <div data-role="fieldcontain" style="width: 50%">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+
+          <legend>How Many Children?</legend>
+          
+          
+          <input type="radio" name="aaa" id="aaa_0" value="1" />
+          <label for="aaa_0">1</label>
+          <input type="radio" name="aaa" id="aaa_1" value="2" />
+          <label for="aaa_1">2</label>
+          <input type="radio" name="aaa" id="aaa_2" value="3" />
+          <label for="aaa_2">3</label>
+          <input type="radio" name="aaa" id="aaa_4" value="4" />
+          <label for="aaa_4">4</label>
+          <input type="radio" name="aaa" id="aaa_5" value="5" />
+          <label for="aaa_5">5</label>
+          <input type="radio" name="aaa" id="aaa_6" value="6" />
+          <label for="aaa_6">6</label>
+          <input type="radio" name="aaa" id="aaa_7" value="7" />
+          <label for="aaa_7">7</label>
+          <input type="radio" name="aaa" id="aaa_8" value="8" />
+          <label for="aaa_8">8</label>
+          <input type="radio" name="aaa" id="aaa_9" value="9" />
+          <label for="aaa_9">9</label>
+          <input type="radio" name="aaa" id="aaa_10" value="10" />
+          <label for="aaa_10">10</label>
+        </fieldset>
+
+        <script>
+          $("input[type='radio']").bind( "change", function(event, ui) {
+            var mySelection = $('input[name=aaa]:checked').val();
+            //alert(mySelection);
+            if (mySelection == "1") {
+              $('#A2').removeClass('ui-hidden-accessible');
+            } else {
+              $('#A2').addClass('ui-hidden-accessible');
+            };
+          });
+        </script>
+      </div>
+      <div id="A2" data-role="fieldcontain" class="ui-hidden-accessible">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>Children Information</legend>
+          <input type="radio" name="bbb" id="bbb_0" value="" />
+          <label for="bbb_0">Yes</label>
+          <input type="radio" name="bbb" id="bbb_1" value="" />
+          <label for="bbb_1">No</label>
+          <input type="radio" name="bbb" id="bbb_2" value="" />
+          <label for="bbb_2">Unsure</label>
+        </fieldset>
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>(Question A3) An attack sod concentrates the acorn without a kept monster.</legend>
+          <input type="radio" name="ccc" id="ccc_0" value="notA4" />
+          <label for="ccc_0">Yes</label>
+          <input type="radio" name="ccc" id="ccc_1" value="A4" />
+          <label for="ccc_1">No</label>
+          <input type="radio" name="ccc" id="ccc_2" value="A4" />
+          <label for="ccc_2">Unsure</label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

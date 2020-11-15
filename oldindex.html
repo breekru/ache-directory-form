@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACHE Directory Submission</title>
+	<link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+	<div class="formContainer">
+			<h1>ACHE Directory Submission Form</h1>
+		<br>
+		<br>
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+			<!--<label for="fname">First Name:</label><br>
+			<input type="text" id="fname" name="fname"><br><br>
+			<label for="lname">Last Name:</label><br>
+			<input type="text" id="lname" name="lname"><br><br>
+			<label for="fileToUpload">Upload family Picture</label><br>-->
+	        <input type="text" id="father" name="father" placeholder="Fathers Full Name" onfocus="this.placeholder=''" onblur="this.placeholder='Fathers Full Name'">   
+	        <input type="tel" id="fphone" name="fphone" placeholder="Fathers Phone" onfocus="this.placeholder=''" onblur="this.placeholder='Fathers Phone'">
+	        <input type="text" id="focc" name="focc" placeholder="Fathers Occupation" onfocus="this.placeholder=''" onblur="this.placeholder='Fathers Occupation'"><br>	
+
+			<input type="text" id="mother" name="mother" placeholder="Mothers Full Name" onfocus="this.placeholder=''" onblur="this.placeholder='Mothers Full Name'">   
+			<input type="tel" id="mphone" name="mphone" placeholder="Mothers Phone" onfocus="this.placeholder=''" onblur="this.placeholder='Mothers Phone'">
+			<input type="text" id="mocc" name="mocc" placeholder="Mothers Occupation" onfocus="this.placeholder=''" onblur="this.placeholder='Mothers Occupation'"><br>
+
+			<input type="text" id="address" name="address" placeholder="Address" onfocus="this.placeholder=''" onblur="this.placeholder='Address'"><br>	
+			<textarea rows = "5" cols = "60" name="email">Enter Multiple Emails</textarea>
+			<input type="text" id="1email" name="1email" placeholder="Email" onfocus="this.placeholder=''" onblur="this.placeholder='Email'"><br>	
+			<input type="tel" id="hphone" name="hphone" placeholder="Home Phone" onfocus="this.placeholder=''" onblur="this.placeholder='Home Phone'"><br>	
+			<input type="text" id="church" name="church" placeholder="Church" onfocus="this.placeholder=''" onblur="this.placeholder='Church'"><br>	
+			<input type="text" id="hobbies" name="hobbies" placeholder="Hobbies/activities" onfocus="this.placeholder=''" onblur="this.placeholder='Hobbies/Activities'"><br>	
+
+			<input type="text" id="cname" name="cname" placeholder="Childs Name" onfocus="this.placeholder=''" onblur="this.placeholder='Childs Name'">	
+			<input type="date" id="cbday" name="cbday" placeholder="Childs Birthday" onfocus="this.placeholder=''" onblur="this.placeholder='Childs Birthday'">
+			<p>Graduated?</p>
+			<label for="graduated">Yes</label>
+			<input type="checkbox" id="graduatedy" name="graduatedy" placeholder="Graduated?" onfocus="this.placeholder=''" onblur="this.placeholder='Graduated?'">
+			<label for="graduated">No</label>
+			<input type="checkbox" id="graduatedn" name="graduatedn" placeholder="Graduated?" onfocus="this.placeholder=''" onblur="this.placeholder='Graduated?'"><br>	
+					
+
+
+
+
+			<input type="file" name="fileToUpload" id="fileToUpload"><br><br>
+			<input type="submit" value="Submit" name="Submit">
+		</form>
+	</div>
+</body>
+</html>
+
+

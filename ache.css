@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #70bg32;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient(to top left, #39fc03, #000000);
+    background: -moz-linear-gradient(to top left, #39fc03, #000000);
+    background: -ms-linear-gradient(to top left, #39fc03, #000000);
+    background: -o-linear-gradient(to top left, #39fc03, #000000);
+    background: linear-gradient(to top left, #39fc03, #000000);
+}
+/*body {
+  background: linear-gradient(to top left, #39fc03, #000000);
+  background-repeat: no-repeat;
+
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color: white;
+}*/
+body {
+    color:white;
+    line-height: 200%;
+}
+H1 {
+    display: block; 
+    font-size: 2em;
+    margin-top: 0.67em; 
+    margin-bottom: 0.67em; 
+    margin-left: 0; 
+    margin-right: 0; 
+    font-weight: bold;
+
+}
+#button1{
+    width: 300px;
+    height: 40px;
+}
+#button2{
+    width: 300px;
+    height: 40px;
+}
+#container{
+    text-align: center;
+}
+button {
+	display: inline-block;
+}
